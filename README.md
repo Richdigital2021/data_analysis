@@ -1,43 +1,67 @@
-# 🌸 Iris Dataset Analysis
+# 🚢 Titanic Survival Prediction
 
-This project explores the classic **Iris flower dataset** using Python. It includes data loading, exploration, visualization, and basic machine learning techniques for classification.
-
----
-
-## 📁 Dataset Information
-
-The Iris dataset contains **150 samples** of iris flowers from three species:  
-- *Iris setosa*  
-- *Iris versicolor*  
-- *Iris virginica*
-
-Each sample includes the following features:
-- Sepal length (cm)
-- Sepal width (cm)
-- Petal length (cm)
-- Petal width (cm)
-- Species (target)
+This project analyses the **Titanic passenger dataset** to explore the factors that influenced survival during the shipwreck. It includes data preprocessing, visualisation, and machine learning model development to predict survival.
 
 ---
 
-## 📌 Objectives
+## 📁 Dataset Overview
 
-- Load and explore the dataset using **pandas**
-- Perform basic statistical analysis
-- Visualize trends and distributions using **matplotlib** and **seaborn**
-- Train a basic classification model using **scikit-learn**
-- Evaluate model performance
+The dataset contains information about the passengers on the Titanic, including:
+
+- `PassengerId` – Unique ID  
+- `Pclass` – Ticket class (1st, 2nd, 3rd)  
+- `Name`, `Sex`, `Age` – Personal details  
+- `SibSp`, `Parch` – Family aboard  
+- `Ticket`, `Fare` – Ticket info  
+- `Cabin`, `Embarked` – Cabin and port of embarkation  
+- `Survived` – Target variable (1 = Survived, 0 = Did not survive)
 
 ---
 
-## 🔧 Tools and Libraries
+## 🎯 Project Objectives
 
-- Python
-- pandas
-- matplotlib
-- seaborn
-- scikit-learn
-- Jupyter Notebook
+- Load and clean the Titanic dataset
+- Handle missing values and categorical data
+- Explore trends and relationships with visualisations
+- Train machine learning models to predict survival
+- Evaluate model performance with appropriate metrics
+
+---
+
+## 🛠️ Tools and Libraries Used
+
+- **Python**  
+- **pandas**
+- **matplotlib**
+- **seaborn**  
+- **scikit-learn**
+- **Jupyter Notebook**
+
+---
+
+## 📊 Key Visualizations
+
+- Survival rate by gender and class
+- Age distribution of survivors vs. non-survivors
+- Correlation heatmap
+- Fare vs. survival scatter plot
+- Confusion matrix for model results
+
+---
+
+## 🤖 Models Trained
+
+- Logistic Regression  
+- Random Forest Classifier  
+- K-Nearest Neighbours  
+- Support Vector Machine
+
+Model performance is evaluated using:
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC Curve
 
 ---
 
@@ -51,19 +75,15 @@ Each sample includes the following features:
 
 ---
 
-## 🤖 Model Training
-
-A **Random Forest Classifier** was trained to predict the iris species with high accuracy. Feature importance was also visualized to understand which attributes contribute most to prediction.
-
----
-
 ## 📁 File Structure
 
-iris-analysis/ 
+titanic-survival/ 
 
-├── iris_analysis.ipynb # Main Jupyter notebook
+├── titanic_train.csv # Training data 
 
-├── iris.csv # Dataset (optional, if not loaded via sklearn)
+├── titanic_test.csv # Test data (optional) 
+
+├── titanic_analysis.ipynb # Main Jupyter Notebook 
 
 ├── README.md # Project documentation
 
@@ -78,8 +98,17 @@ iris-analysis/
 
 2. Open the notebook:
    ```bash
-   jupyter notebook iris_analysis.ipynb
+   jupyter notebook titanic_analysis.ipynb
 
+## 🧠 Insights & Findings
+- Women and children had a significantly higher chance of survival.
+
+- First-class passengers had higher survival rates than lower classes.
+
+- Age, Fare, and Embarkation point also contributed to survival prediction.
 
 ## 📌 License
 This project is licensed under the MIT License.
+
+## 📬 Contact
+For any questions or suggestions, reach out via akintunderichard28@gmail.com
